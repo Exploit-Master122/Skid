@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're a skid</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(145deg, #0f0f1b, #000000);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+
+    .slogan-container {
+      position: relative;
+      width: 90%;
+      max-width: 1000px;
+      height: 120px;
+      overflow: hidden;
+    }
+
+    .slogan {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      color: #ff004d;
+      opacity: 0;
+      text-shadow:
+        0 0 5px #ff004d,
+        0 0 10px #ff004d,
+        0 0 20px #ff004d,
+        0 0 40px #9b00ff;
+      animation: rotateSlogans 48s infinite;
+    }
+
+    /* Delay each slogan */
+    .slogan:nth-child(1) { animation-delay: 0s; }
+    .slogan:nth-child(2) { animation-delay: 4s; }
+    .slogan:nth-child(3) { animation-delay: 8s; }
+    .slogan:nth-child(4) { animation-delay: 12s; }
+    .slogan:nth-child(5) { animation-delay: 16s; }
+    .slogan:nth-child(6) { animation-delay: 20s; }
+    .slogan:nth-child(7) { animation-delay: 24s; }
+    .slogan:nth-child(8) { animation-delay: 28s; }
+    .slogan:nth-child(9) { animation-delay: 32s; }
+    .slogan:nth-child(10){ animation-delay: 36s; }
+    .slogan:nth-child(11){ animation-delay: 40s; }
+    .slogan:nth-child(12){ animation-delay: 44s; }
+
+    @keyframes rotateSlogans {
+      0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+      5% { opacity: 1; transform: translateY(0) scale(1); }
+      20% { opacity: 1; }
+      25% { opacity: 0; transform: translateY(-20px) scale(0.95); }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slogan-container">
+    <div class="slogan">(You're a skid.)</div>
+    <div class="slogan">(Writes useless Scripts)</div>
+    <div class="slogan">(Fully ChatGPT code)</div>
+    <div class="slogan">(You're a Novice Coder)</div>
+    <div class="slogan">(FreeDNS Hosting)</div>
+    <div class="slogan">(No GitHub account)</div>
+    <div class="slogan">(Uses playcode.io)</div>
+    <div class="slogan">(No imagination)</div>
+    <div class="slogan">(Don't be an ass when it comes to coding)</div>
+    <div class="slogan">(Most are equal)</div>
+    <div class="slogan">(Damn You)</div>
+    <div class="slogan">(Mic Drop 🥲)</div>
+  </div>
+</body>
+</html>
